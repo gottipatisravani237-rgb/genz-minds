@@ -17,6 +17,9 @@ venv/
 *.sqlite
 *.sqlite3
 backend/storage/
+backend/tests/app/
+backend/tests/alembic/
+backend/tests/storage/
 
 # Logs
 *.log
