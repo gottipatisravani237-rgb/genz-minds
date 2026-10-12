@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  html, body {
+    @apply bg-[#05090D] text-[#F4F7FA] min-h-screen antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: #05090D;
+    color: #F4F7FA;
+  }
+}
+
+/* Futuristic Healthcare Dark Theme Cards & Panels */
+.glass-panel-dark {
+  background: rgba(13, 23, 31, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #203039;
+  box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.6), 0 0 15px -3px rgba(0, 208, 132, 0.05);
+}
+
+.glass-panel-elevated {
+  background: rgba(17, 31, 40, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid #2a414e;
+  box-shadow: 0 15px 40px -5px rgba(0, 0, 0, 0.7), 0 0 20px -2px rgba(33, 230, 193, 0.08);
+}
+
+.glass-card-interactive {
+  background: rgba(13, 23, 31, 0.75);
+  border: 1px solid #203039;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-interactive:hover {
+  background: rgba(17, 31, 40, 0.9);
+  border-color: rgba(0, 208, 132, 0.4);
+  box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 208, 132, 0.15);
+  transform: translateY(-2px);
+}
+
+.glass-input-dark {
+  background: rgba(10, 17, 24, 0.8);
+  border: 1px solid #203039;
+  color: #F4F7FA;
+  transition: all 0.2s ease;
+}
+
+.glass-input-dark:focus {
+  background: rgba(13, 23, 31, 0.95);
+  border-color: #00D084;
+  box-shadow: 0 0 0 3px rgba(0, 208, 132, 0.15), 0 0 15px rgba(0, 208, 132, 0.2);
+  outline: none;
+}
+
+/* Emerald & Neon Buttons */
+.btn-emerald {
+  @apply bg-[#00D084] hover:bg-[#00ba76] text-[#05090D] font-bold px-4 py-2.5 rounded-xl transition duration-200 shadow-md shadow-[#00D084]/20 flex items-center justify-center gap-2;
+}
+
+.btn-emerald:hover {
+  box-shadow: 0 0 20px rgba(0, 208, 132, 0.45);
+}
+
+.btn-secondary-dark {
+  @apply bg-[#111F28] hover:bg-[#162936] text-[#F4F7FA] border border-[#203039] hover:border-[#00D084]/40 font-medium px-4 py-2.5 rounded-xl transition duration-200 flex items-center justify-center gap-2;
+}
+
+/* Medical Grid Background Pattern */
+.bg-medical-grid {
+  background-image: radial-gradient(rgba(32, 48, 57, 0.4) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Glowing Pulse & Neon Highlights */
+.glow-emerald-text {
+  text-shadow: 0 0 16px rgba(0, 208, 132, 0.5);
+}
+
+.glow-teal-text {
+  text-shadow: 0 0 16px rgba(33, 230, 193, 0.5);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080E13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #203039;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00D084;
+}
